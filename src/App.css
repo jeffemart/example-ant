@@ -1,6 +1,9 @@
 :root {
   --progress: 80;
 }
+.body {
+  background-color: #E5E5E5;
+}
 
 h1 {
   font-size: 2em;
@@ -66,8 +69,9 @@ h3 {
 }
 
 .content-title {
-  width: 100%;
-  text-align: center;
+  width: 85%;
+  text-align: left;
+  margin: auto;
 }
 
 /* ?/------/? */
@@ -127,4 +131,49 @@ input {
   width: 2em;
   height: 2em;
   position: absolute;
+}
+
+.article-lateral {
+  width: 20%;
+  padding: 10px;
+  height: 100vh;
+  background-color: #E5E5E5;
+}
+
+.content {
+  display: flex;
+}
+
+.submenu {
+  width: 80%;
+  background-color: white;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.icons {
+  width: 2em;
+  height: 2em;
+}
+
+.content-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first {
+  margin-bottom: 40px;
+}
+
+.button-article button {
+  width: 186px;
+  height: 42px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  position: absolute;
+  right: 55px;
+  bottom: 25px;
+  border-radius: 10px;
+  background: #a9d6d3;
 }
