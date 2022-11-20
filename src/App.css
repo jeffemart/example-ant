@@ -1,0 +1,130 @@
+:root {
+  --progress: 80;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+.header-menu-left {
+  display: flex;
+  justify-content: center;
+}
+
+.image-profile {
+  width: 40%;
+  padding: 15px;
+  min-height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-profile img {
+  max-width: 100px;
+  display: flex;
+  float: right;
+  justify-content: right;
+}
+
+.text-menu-left {
+  width: 60%;
+  padding: 25px;
+  min-height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-menu-left h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.text-menu-left h3 {
+  margin-top: 0;
+}
+
+.content-card {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.site-card-border-less-wrapper {
+  margin: auto;
+  padding: 10px;
+  max-width: 55%;
+  min-height: 200px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0px grey;
+}
+
+.content-title {
+  width: 100%;
+  text-align: center;
+}
+
+/* ?/------/? */
+
+.data-content {
+  display: flex;
+  padding-right: 10%;
+  align-items: center;
+}
+
+.content-30 {
+  width: 30%;
+}
+
+.content-30 h2 {
+  margin-right: 10px;
+  text-align: center;
+}
+
+.content-70 {
+  width: 70%;
+  margin-top: 10px;
+}
+
+.content-70 h3 {
+  margin: 0;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+/* Estilização da barra de progresso */
+
+input {
+  margin: 10px auto;
+  display: block;
+  background-color: red;
+}
+
+.progress-bar {
+  --progress: 50;
+  height: 5px;
+  display: flex;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+.progress-bar::before {
+  content: "";
+  width: calc(var(--progress) * 1%);
+  background-color: hsl(calc(var(--progress) * 1.2), 80%, 50%);
+  transition: all 0.5s ease;
+}
+
+.icon-menu-wraper {
+  top: 10px;
+  right: 10px;
+  width: 2em;
+  height: 2em;
+  position: absolute;
+}
